@@ -124,3 +124,8 @@
   float: right;
   margin-top: 60px;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}

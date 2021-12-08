@@ -12,7 +12,7 @@ const Slider = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner bg-primary">
-          <div className="carousel-item active ">
+          <div className="carousel-item active">
             <img
               style={{ height: "300px", opacity: "0.6" }}
               src={slide1}
@@ -27,7 +27,7 @@ const Slider = () => {
               <button className="btn btn-primary">Explore Now</button>
             </div>
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item ">
             <img
               style={{ height: "300px", opacity: "0.6" }}
               src={slide2}

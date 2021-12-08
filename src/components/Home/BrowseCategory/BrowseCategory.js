@@ -217,57 +217,66 @@ const BrowseCategory = () => {
               {/* Carousel slider start  */}
               <div className="col-md-12">
                 <div
-                  id="carouselExampleCaptions"
-                  className="carousel slide carousel-fade"
+                  id="carouselExampleControls"
+                  class="carousel slide"
                   data-bs-ride="carousel"
                 >
-                  <div className="carousel-inner bg-primary">
+                  <div class="bg-warning carousel-inner">
                     <div
                       style={{ height: "250px" }}
-                      className="carousel-item  active "
+                      class="carousel-item  active"
                     >
-                      <div className="carousel-caption slider-content d-none d-md-block">
-                        <h5>First Title Here</h5>
+                      <div class="carousel-caption  d-md-block">
+                        <h5>First slide label</h5>
                         <p>
                           Some representative placeholder content for the first
                           slide.
                         </p>
                       </div>
                     </div>
-                    <div style={{ height: "250px" }} className="carousel-item">
-                      <div className="carousel-caption slider-content d-none d-md-block">
-                        <h5>Second Title Here</h5>
+                    <div style={{ height: "250px" }} class="carousel-item ">
+                      <div class="carousel-caption d-md-block">
+                        <h5>Second slide label</h5>
                         <p>
                           Some representative placeholder content for the second
                           slide.
                         </p>
                       </div>
                     </div>
+                    <div style={{ height: "250px" }} class="carousel-item ">
+                      <div class="carousel-caption  d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>
+                          Some representative placeholder content for the third
+                          slide.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <button
-                    className="carousel-control-prev"
+                  {/* <button
+                    class="carousel-control-prev"
                     type="button"
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev"
                   >
                     <span
-                      className="carousel-control-prev-icon"
+                      class="carousel-control-prev-icon"
                       aria-hidden="true"
                     ></span>
-                    <span className="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Previous</span>
                   </button>
                   <button
-                    className="carousel-control-next"
+                    class="carousel-control-next"
                     type="button"
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next"
                   >
                     <span
-                      className="carousel-control-next-icon"
+                      class="carousel-control-next-icon"
                       aria-hidden="true"
                     ></span>
-                    <span className="visually-hidden">Next</span>
-                  </button>
+                    <span class="visually-hidden">Next</span>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -303,7 +312,8 @@ const BrowseCategory = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
+
       {/* special skilled jobs  */}
       <div className="my-4">
         <div className="container browse-category-main ">
