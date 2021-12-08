@@ -1,0 +1,126 @@
+.tab-btn.active {
+  background-color: #757575 !important;
+  color: white;
+}
+
+.tab-btn {
+  padding: 4px 10px 4px 10px;
+  font-size: 14px;
+  border: 1px solid #7575758c;
+}
+.tab-btn-1 {
+  border-radius: 4px 0px 0px 4px;
+}
+.tab-btn-2 {
+}
+.category-container {
+  overflow: hidden;
+  /* min-height: auto; */
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 35%);
+  background-color: white;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.browse-category-main h2 {
+  font-size: 18px;
+  color: #2a5992;
+  font-weight: 700;
+}
+.browse-category-main i {
+  font-size: 20px;
+  color: #2a5992;
+}
+.category-container-top {
+  display: flex;
+  justify-content: space-between;
+}
+/* media queries */
+@media screen and (max-width: 991px) {
+  .category-container {
+    height: auto !important;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 50px !important;
+  }
+  .all-tab-btns {
+    width: 100% !important;
+    margin: 5px 0 0;
+  }
+  .browse-category-main h2 {
+    width: 100%;
+    font-size: 22px;
+    display: block !important;
+  }
+  .category-container-top {
+    width: 100% !important;
+    display: block;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .tab-btn {
+    padding: 4px 80px 4px 80px;
+    font-size: 14px;
+  }
+}
+
+/* browscategory sidebar */
+
+.sidebar-common {
+  background-color: #fffdec;
+  border-radius: 4px;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 35%);
+  height: 330px;
+}
+.category-list ul li a {
+  color: #525252;
+  text-decoration: none;
+  margin-top: 15px !important;
+}
+.category-list ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.functional.active,
+.industrial.active {
+  display: flex;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.ocusl-wrap {
+  clear: both;
+  margin: 10px 0 0 0;
+  background-color: #fffde7;
+  border-radius: 4px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 35%);
+}
+.whalf.mln {
+  clear: both;
+  margin-left: 0;
+}
+.whalf {
+  float: left;
+  margin-left: 2%;
+  width: 49%;
+}
+.inhousc {
+  float: none;
+}
+.see-more-btn {
+  float: right;
+  margin-top: 60px;
+}

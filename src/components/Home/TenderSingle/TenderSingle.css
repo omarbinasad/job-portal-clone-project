@@ -1,0 +1,30 @@
+.tender-single-container {
+  width: 416px;
+  height: 130px;
+}
+
+.tender-single-container img {
+  box-shadow: 0 1px 3px black;
+  width: "80px";
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 55%);
+  transition: 0.2s ease-in-out;
+}
+.tender-single-container:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.603);
+  transition: 0.2s ease-in-out;
+}
+
+.tender-content {
+  margin-bottom: -20px;
+}
+.tender-content h2 {
+  font-size: 14px;
+  color: rgb(167, 0, 78);
+}
+.tender-content p {
+  margin-top: -6px;
+  font-size: 18px;
+  text-transform: uppercase;
+}

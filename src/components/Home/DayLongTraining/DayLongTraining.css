@@ -1,0 +1,31 @@
+/* .single-item {
+  width: 300px;
+} */
+
+.single-item i {
+  box-shadow: 0 1px 3px black;
+  font-size: 2.3rem;
+  padding: 6px;
+  background-color: rgb(25, 48, 78);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 65%);
+  transition: 0.2s ease-in-out;
+}
+.single-item:hover img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.603);
+}
+
+.item-content {
+  margin-bottom: -20px;
+}
+.item-content p {
+  margin-top: -6px;
+}
+
+.daylong-container {
+  box-shadow: 0 1px 3px black;
+}
+.evening-container {
+  box-shadow: 0 1px 3px black;
+}

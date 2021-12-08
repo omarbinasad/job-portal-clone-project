@@ -1,0 +1,9 @@
+/* media queries */
+@media screen and (max-width: 991px) {
+  .jobs-container {
+    justify-content: center;
+  }
+  .hot-jobs h2 {
+    text-align: center;
+  }
+}

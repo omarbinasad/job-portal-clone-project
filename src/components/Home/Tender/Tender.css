@@ -1,0 +1,9 @@
+/* media queries */
+@media screen and (max-width: 991px) {
+  .tenders-container h2 {
+    text-align: center;
+  }
+  .tenders {
+    justify-content: center;
+  }
+}
