@@ -66,6 +66,7 @@
 .active-filters-wrapper {
   position: sticky;
   top: 0;
+  bottom: auto;
   z-index: 2;
 }
 .active-filters-left {
@@ -99,12 +100,16 @@
 }
 .active-filters-right {
   width: 90%;
-  background-color: #afafaf;
-  padding: 0;
+  background-color: #ffffff;
+  padding: 10px 10px;
   text-align: center;
   margin: 0;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   color: #fff;
+}
+.active-filters-right > .toast {
+  color: black;
 }
 .active-filters-left h2 {
   font-size: 15px;
@@ -114,4 +119,45 @@
 
 .floatBar-main {
   display: flex;
+}
+/* .toast:not(.show) {
+  display: block;
+} */
+.toast-body {
+  padding: 0;
+}
+.toast {
+  width: 25%;
+}
+
+@media screen and (max-width: 991px) {
+  .active-filters-wrapper {
+    height: 50px;
+  }
+  .active-filters-left {
+    border-radius: 0;
+  }
+  .active-filters-left::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: #424242;
+    transform: translateX(200%) rotate(43deg);
+    position: absolute;
+    z-index: 0;
+  }
+
+  .toast-body {
+    padding: 0;
+  }
+  .toast {
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  /* .floatBar-main {
+    display: flex;
+    flex-direction: column;
+    
+  } */
 }

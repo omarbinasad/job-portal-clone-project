@@ -21,7 +21,7 @@ const DayLongTraining = () => {
             alt=""
           />
         </div>
-        <div className="d-flex justify-content-center  my-3">
+        <div className="trainings-container d-flex justify-content-center my-3">
           <div className="daylong-container p-4 col-md-6 me-4 col-sm-6">
             {" "}
             <h2

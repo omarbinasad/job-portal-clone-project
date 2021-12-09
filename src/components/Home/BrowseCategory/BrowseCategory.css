@@ -10,9 +10,13 @@
 }
 .tab-btn-1 {
   border-radius: 4px 0px 0px 4px;
+  border-right: 0;
 }
 .tab-btn-2 {
+  border-radius: 0px 4px 4px 0px;
+  border-left: 0;
 }
+
 .category-container {
   overflow: hidden;
   /* min-height: auto; */

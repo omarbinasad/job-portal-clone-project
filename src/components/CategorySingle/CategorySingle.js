@@ -1,4 +1,5 @@
 import React from "react";
+import { Toast } from "react-bootstrap";
 import CategoryAllContents from "./CategoryAllContents/CategoryAllContents";
 import "./CategorySingle.css";
 import FloatingBar from "./FloatingBar/FloatingBar";
@@ -68,7 +69,13 @@ const CategorySingle = () => {
           <div className="active-filters-left">
             <h2>Active Filters</h2>
           </div>
-          <div className="active-filters-right"></div>
+          <div className="active-filters-right">
+            <Toast>
+              <Toast.Header>
+                <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+              </Toast.Header>
+            </Toast>
+          </div>
         </div>
         {/* active filters wrapper end */}
         <div className="floatBar-main">

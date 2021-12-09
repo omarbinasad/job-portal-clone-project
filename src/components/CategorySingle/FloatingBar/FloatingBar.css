@@ -81,3 +81,31 @@
       transform: translateX(0);
     }
   } */
+@media screen and (max-width: 791px) {
+  .floatBar-btn-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    top: 50px;
+    width: 50px;
+  }
+  .floatBar-btn-container h2 {
+    display: none;
+  }
+  .floatBar-btn-container i {
+    font-size: 25px;
+    margin-top: 3px;
+  }
+  .dropside-btn {
+    border-right: 1px solid rgb(0, 0, 0);
+    width: 75px;
+  }
+  .dropside-btn:nth-child(7) {
+    padding: 14px 25px 14px 20px;
+    border-radius: 0px;
+    width: auto;
+  }
+  .dropside-btn:nth-child(7) > h6 {
+    display: none;
+  }
+}

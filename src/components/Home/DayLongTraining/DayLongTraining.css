@@ -29,3 +29,21 @@
 .evening-container {
   box-shadow: 0 1px 3px black;
 }
+
+@media screen and (max-width: 991px) {
+  .trainings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .daylong-container {
+    width: 100%;
+    margin-right: 0% !important;
+  }
+  .evening-container {
+    width: 100%;
+    margin-top: 25px;
+  }
+}

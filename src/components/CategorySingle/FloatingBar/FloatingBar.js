@@ -108,7 +108,7 @@ const FloatingBar = () => {
           <ul className="dropdown-menu">sadsasdsadsa</ul>
         </div>
         <button className="dropside-btn">
-          Close all <i className="fas fa-times"></i>{" "}
+          <h6>Close all</h6> <i className="fas fa-times"></i>{" "}
         </button>
       </div>
     </div>

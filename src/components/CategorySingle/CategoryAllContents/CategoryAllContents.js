@@ -6,7 +6,20 @@ const CategoryAllContents = () => {
     <div>
       {/* all Contents here */}
       <div className="all-jobs-right p-3 ">
-        <h3 className="text-start">Click to view Details</h3>
+        <div className="d-flex justify-content-between w-100 my-3">
+          <h5 className="text-secondary text-start">Click to view Details</h5>
+          <div className="jobsppge d-flex">
+            <label for="cmbjobsPerPage">Jobs per page</label>
+            <div className="ms-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>10</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select>
+            </div>
+          </div>
+        </div>
         <div>
           <div className="content-details d-flex justify-content-between">
             <div className="left-content">
@@ -28,7 +41,7 @@ const CategoryAllContents = () => {
             <div className="right-content">
               <i className="fas fa-home logo-icon"></i>
               <h6>
-                <i class="far fa-calendar-alt"></i> Deadline:
+                <i className="far fa-calendar-alt"></i> Deadline:
                 <strong>18 Dec</strong> 2021
               </h6>
             </div>
@@ -53,7 +66,7 @@ const CategoryAllContents = () => {
             <div className="right-content">
               <i className="fas fa-home logo-icon"></i>
               <h6>
-                <i class="far fa-calendar-alt"></i> Deadline:
+                <i className="far fa-calendar-alt"></i> Deadline:
                 <strong>18 Dec</strong> 2021
               </h6>
             </div>
@@ -78,7 +91,7 @@ const CategoryAllContents = () => {
             <div className="right-content">
               <i className="fas fa-home logo-icon"></i>
               <h6>
-                <i class="far fa-calendar-alt"></i> Deadline:
+                <i className="far fa-calendar-alt"></i> Deadline:
                 <strong>18 Dec</strong> 2021
               </h6>
             </div>
@@ -104,7 +117,7 @@ const CategoryAllContents = () => {
               <i className="fas fa-home logo-icon"></i>
               <div>
                 <h6>
-                  <i class="far fa-calendar-alt"></i> Deadline:
+                  <i className="far fa-calendar-alt"></i> Deadline:
                   <strong>18 Dec</strong> 2021
                 </h6>
               </div>
