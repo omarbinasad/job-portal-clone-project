@@ -13,34 +13,47 @@ const FloatingBar = () => {
             aria-expanded="false"
           >
             <i className="fas fa-tag"></i>
-            <h2>Dropright</h2>
+            <h2>Keywords</h2>
           </button>
-          <ul class="dropdown-menu dropdown-search">
-            <li class="container">
-              <div class="row">
-                <div class="col-sm-12">
-                  <label for="txtsearch" class="stitle-text-box">
+          <ul className="dropdown-menu dropdown-box">
+            {" "}
+            <li className="container">
+              <div className="row">
+                <div className="col-sm-12">
+                  <label for="txtsearch" className="text-white stitle-text-box">
                     Search by keyword
                   </label>
-                  <div class="input-group">
-                    <input
-                      name="txtsearch"
-                      id="txtsearch"
-                      class="form-control"
-                      placeholder="Search for..."
-                      size="50"
-                      maxlength="50"
-                      type="text"
-                    />
-                    <span class="input-group-btn">
-                      <button
-                        class="btn done-button-s"
-                        onclick="showSearchedResult('dropdown_bottom')"
-                        type="button"
+                  <div className="search-wrapper">
+                    <div className="search-container">
+                      <form
+                        role="search"
+                        method="get"
+                        className="form"
+                        action=""
                       >
-                        <i className="bg-primary px-3 py-1 rounded fas fa-search"></i>
-                      </button>
-                    </span>
+                        <label>
+                          <span className="screen-reader-text">
+                            Search for...
+                          </span>
+                          <input
+                            type="search"
+                            className="search-field"
+                            placeholder="Type something..."
+                            value=""
+                            name="s"
+                            title=""
+                          />
+                        </label>
+                        <button
+                          type="submit"
+                          className="search-submit button"
+                          value=""
+                        >
+                          {" "}
+                          <i className="fas fa-search"></i>
+                        </button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -55,9 +68,52 @@ const FloatingBar = () => {
             aria-expanded="false"
           >
             <i className="fas fa-building"></i>
-            <h2> Dropright</h2>
+            <h2>Industry</h2>
           </button>
-          <ul className="dropdown-menu">sadsasdsadsa</ul>
+
+          <ul className="dropdown-menu dropdown-box">
+            <li className="container">
+              <div className="row">
+                <div className="col-sm-12">
+                  <label for="txtsearch" className="text-white stitle-text-box">
+                    Search by keyword
+                  </label>
+                  <div className="dropdown-box-wrapper">
+                    <div className="dropdown-box-inner-left">
+                      <form className="radio-input-form">
+                        <input type="radio" name="fav_language" value="HTML" />
+                        <label className="" for="html">
+                          &nbsp; HTML
+                        </label>
+                        <br />
+                        <input
+                          type="radio"
+                          id="css"
+                          name="fav_language"
+                          value="CSS"
+                        />
+                        <label className="" for="css">
+                          &nbsp; CSS
+                        </label>
+                        <br />
+                        <input
+                          type="radio"
+                          id="javascript"
+                          name="fav_language"
+                          value="JavaScript"
+                        />
+                        <label className="" for="javascript">
+                          &nbsp; JavaScript
+                        </label>
+                        <br />
+                      </form>
+                    </div>
+                    <div className="dropdown-box-inner-left"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
         <div className="btn-group dropend">
           <button
@@ -66,8 +122,8 @@ const FloatingBar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i className="fas fa-tag"></i>
-            <h2> Dropright</h2>
+            <i className="fas fa-map-marker-alt"></i>
+            <h2>Location</h2>
           </button>
           <ul className="dropdown-menu">sadsasdsadsa</ul>
         </div>
@@ -79,7 +135,7 @@ const FloatingBar = () => {
             aria-expanded="false"
           >
             <i className="fas fa-list"></i>
-            <h2> Dropright</h2>
+            <h2>Category</h2>
           </button>
           <ul className="dropdown-menu">sadsasdsadsa</ul>
         </div>
@@ -90,8 +146,8 @@ const FloatingBar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i className="fas fa-tag"></i>
-            <h2> Dropright</h2>
+            <i className="far fa-calendar-alt"></i>
+            <h2>Deadline</h2>
           </button>
           <ul className="dropdown-menu">sadsasdsadsa</ul>
         </div>
@@ -102,8 +158,8 @@ const FloatingBar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i className="fas fa-tag"></i>
-            <h2>Dropright</h2>
+            <i className="fas fa-filter"></i>
+            <h2>Other Filters</h2>
           </button>
           <ul className="dropdown-menu">sadsasdsadsa</ul>
         </div>

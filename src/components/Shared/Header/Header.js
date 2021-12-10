@@ -1,10 +1,16 @@
-import Button from "@restart/ui/esm/Button";
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const [style, setStyle] = useState("see-more-btn-2");
+  const invisible = () => {
+    setStyle("display-none");
+  };
+  const visible = () => {
+    setStyle("see-more-btn-2");
+  };
   return (
     <div>
       {" "}
@@ -15,14 +21,15 @@ const Header = () => {
           hidden by default but revealed when the user activates the relevant
           trigger.
           <button
-            className="btn btn-default cross-btn"
+            onClick={visible}
+            className="cross-btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseExample"
             aria-expanded="true"
             aria-controls="collapseExample"
           >
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times "></i>
           </button>
         </div>
       </div>
@@ -30,7 +37,8 @@ const Header = () => {
       <div className="top-bar d-none d-sm-block d-sm-none d-md-block">
         <div className="container">
           <button
-            className="btn btn-default see-more-btn-2 "
+            onClick={invisible}
+            className={style}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseExample"

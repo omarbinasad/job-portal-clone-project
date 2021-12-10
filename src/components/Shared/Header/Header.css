@@ -90,13 +90,16 @@
 
 .see-more-btn-2 {
   position: absolute;
-
   display: block;
   border-radius: 0px 0px 5px 5px;
   padding: 3px 10px;
   background-color: rgb(240, 198, 84);
   right: 5% !important;
+  transition: all 0.5s ease-in-out !important;
+  transition-delay: 3s !important;
+  border-top: 0;
 }
+
 .cross-btn {
   position: absolute;
   z-index: 10 !important;
@@ -105,4 +108,12 @@
   background-color: rgb(255, 255, 255);
   right: 5% !important;
   color: rgb(0, 0, 0);
+}
+
+.arrow-icon {
+  transform: rotate(180deg) !important;
+}
+.display-none {
+  display: none;
+  transition: all 0.5s ease-in-out !important;
 }
