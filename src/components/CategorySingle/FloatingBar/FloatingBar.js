@@ -38,7 +38,7 @@ const FloatingBar = () => {
                           <input
                             type="search"
                             className="search-field"
-                            placeholder="Type something..."
+                            placeholder="Search for..."
                             value=""
                             name="s"
                             title=""
@@ -73,42 +73,180 @@ const FloatingBar = () => {
 
           <ul className="dropdown-menu dropdown-box">
             <li className="container">
-              <div className="row">
+              <div className="row p-3">
                 <div className="col-sm-12">
-                  <label for="txtsearch" className="text-white stitle-text-box">
+                  <label
+                    for="txtsearch"
+                    className="text-white stitle-text-box "
+                  >
                     Search by keyword
                   </label>
-                  <div className="dropdown-box-wrapper">
-                    <div className="dropdown-box-inner-left">
+                  <div className="dropdown-box-wrapper ">
+                    {/* left  */}
+                    <div className="dropdown-box-inner-left col-sm-6 ">
                       <form className="radio-input-form">
-                        <input type="radio" name="fav_language" value="HTML" />
-                        <label className="" for="html">
-                          &nbsp; HTML
-                        </label>
-                        <br />
-                        <input
-                          type="radio"
-                          id="css"
-                          name="fav_language"
-                          value="CSS"
-                        />
-                        <label className="" for="css">
-                          &nbsp; CSS
-                        </label>
-                        <br />
-                        <input
-                          type="radio"
-                          id="javascript"
-                          name="fav_language"
-                          value="JavaScript"
-                        />
-                        <label className="" for="javascript">
-                          &nbsp; JavaScript
-                        </label>
-                        <br />
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>{" "}
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>{" "}
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                      </form>
+                    </div>{" "}
+                    {/* right */}
+                    <div className="dropdown-box-inner-left col-sm-6 ">
+                      <form className="radio-input-form">
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
                       </form>
                     </div>
-                    <div className="dropdown-box-inner-left"></div>
+                  </div>
+                  <div className="col-sm-12  py-3">
+                    <form className="radio-input-form">
+                      <div className="d-flex">
+                        {" "}
+                        <input
+                          type="radio"
+                          name="fav_language"
+                          value="Category"
+                        />
+                        <label className="" for="html">
+                          &nbsp; All Category
+                        </label>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -125,7 +263,170 @@ const FloatingBar = () => {
             <i className="fas fa-map-marker-alt"></i>
             <h2>Location</h2>
           </button>
-          <ul className="dropdown-menu">sadsasdsadsa</ul>
+          <ul className="dropdown-menu dropdown-box">
+            <li className="container">
+              <div className="row">
+                <div className="col-sm-12">
+                  <label for="txtsearch" className="text-white stitle-text-box">
+                    Search by keyword
+                  </label>
+                  <div className="dropdown-box-wrapper ">
+                    {/* left  */}
+                    <div className="dropdown-box-inner-left col-sm-6 ">
+                      <form className="radio-input-form">
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>{" "}
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>{" "}
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    {/* right */}
+                    <div className="dropdown-box-inner-left col-sm-6 ">
+                      <form className="radio-input-form">
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="mb-2 d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="HTML"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                        <div className="d-flex">
+                          <input
+                            type="radio"
+                            name="fav_language"
+                            value="Category"
+                          />
+                          <label className="" for="html">
+                            &nbsp; Category
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div className="col-sm-12"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
         <div className="btn-group dropend">
           <button

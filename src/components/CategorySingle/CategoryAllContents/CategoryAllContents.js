@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "../../Home/Slider/Slider";
 import "./CategoryAllContents.css";
 
 const CategoryAllContents = () => {
@@ -25,7 +26,6 @@ const CategoryAllContents = () => {
             <div className="left-content">
               <a href="#">Title here</a>
               <h5>Subtitle here</h5>
-
               <h6>
                 {" "}
                 <i className="fas fa-tag"></i> Location
@@ -100,7 +100,6 @@ const CategoryAllContents = () => {
             <div className="left-content">
               <a href="#">Title here</a>
               <h5>Subtitle here</h5>
-
               <h6>
                 {" "}
                 <i className="fas fa-tag"></i> Location
@@ -122,6 +121,9 @@ const CategoryAllContents = () => {
                 </h6>
               </div>
             </div>
+          </div>
+          <div className="content-details  ">
+            <Slider></Slider>
           </div>
         </div>
       </div>

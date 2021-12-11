@@ -16,10 +16,12 @@ const Header = () => {
       {" "}
       {/* collapse bar  */}
       <div className="collapse" id="collapseExample">
-        <div className="card card-body">
-          Some placeholder content for the collapse component. This panel is
-          hidden by default but revealed when the user activates the relevant
-          trigger.
+        <div className="card d-flex justify-content-center align-items-center card-body">
+          <div>
+            {" "}
+            <img src="https://www.bdjobs.com/images/desktop_popup.png" alt="" />
+          </div>
+
           <button
             onClick={visible}
             className="cross-btn"

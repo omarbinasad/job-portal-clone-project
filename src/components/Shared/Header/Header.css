@@ -95,8 +95,6 @@
   padding: 3px 10px;
   background-color: rgb(240, 198, 84);
   right: 5% !important;
-  transition: all 0.5s ease-in-out !important;
-  transition-delay: 3s !important;
   border-top: 0;
 }
 
@@ -115,5 +113,4 @@
 }
 .display-none {
   display: none;
-  transition: all 0.5s ease-in-out !important;
 }
